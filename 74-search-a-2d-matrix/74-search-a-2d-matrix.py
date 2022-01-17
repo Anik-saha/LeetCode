@@ -7,14 +7,11 @@ class Solution:
         while low<=high:
             mid=(high+low)//2
             ele=matrix[mid//n][mid%n]
-            print(low,mid,high,ele,(mid//n),(mid%n))
             if(ele==target):
-                print('true')
                 return True
             elif(ele<target):
                 low=mid+1
             else:
                 high=mid-1
-        print('false')
         return False
         
